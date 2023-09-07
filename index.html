@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="favicon.png" />
+        <title>Jacob Oyen</title>
+        <style>
+            html{
+                background-color: #cb2026;
+                color: #fff;
+                font-family: 'Cutive', serif;
+                font-weight: 100;
+                font-size: 4rem;
+                background: url("https://source.unsplash.com/1600x900/?Wales") center center fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            .quote{
+                display: flex;
+                align-items: center;
+                text-shadow: #000 0px 0 15px;
+                text-align: center;  
+            }
+            footer{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                font-size: .25rem;
+                background-color: rgba(0,0,0, .5);
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="center">
+            <div class="quote"></div>
+        </div>
+        <footer>&copy; 2023 Jacob Oyen. All rights reserved</footer>
+    </body>
+    <script>
+        const quotes = [];
+        quotes.push(
+            "You are doing amazing work!",
+            "You aren\'t alone.",
+            "Be the lynchpin.<br>Not the bottleneck.",
+            "Chase something that matters.",
+            "Don\'t get too cocky.",
+            "You can only control the things you can control.",
+            "You are the expert.",
+            "Some days you are just going to get beat.",
+            "Know when to get out of the way.",
+            "Give a crap about what you are doing.",
+            "Don't forget to take a dose of your own medicine.",
+            "You have permission to fail.",
+            "Everybody is winging it."
+        );
+        randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+        console.log (randomQuote)
+        document.querySelector('div.quote').innerHTML = randomQuote;
+    </script>
+</html>
